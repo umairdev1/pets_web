@@ -32,6 +32,12 @@ class WebHeader extends StatelessWidget {
                     // ignore: prefer_const_literals_to_create_immutables
                     children: [
                       // ignore: prefer_const_constructors
+                      Builder(
+                          builder: (context) => IconButton(
+                              onPressed: () {
+                                Scaffold.of(context).openDrawer();
+                              },
+                              icon: Icon(Icons.menu))),
                       Text(
                         "PETIAN",
                         // ignore: prefer_const_constructors

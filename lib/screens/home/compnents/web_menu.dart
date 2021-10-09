@@ -53,3 +53,33 @@ class MenuContainer extends StatelessWidget {
     );
   }
 }
+
+class MobMenu extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        MenuContainer(
+          press: () {},
+          title: "Dogs",
+        ),
+        Divider(),
+        MenuContainer(
+          press: () {},
+          title: "Cats",
+        ),
+        Divider(),
+        MenuContainer(
+          press: () {},
+          title: "Birds",
+        ),
+        Divider(),
+        MenuContainer(
+          press: () {},
+          title: "Fish",
+        ),
+      ],
+    );
+  }
+}
